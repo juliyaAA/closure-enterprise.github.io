@@ -1,0 +1,87 @@
+.header {
+    font-family: "Roboto", sans-serif;
+    &__contacts:after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+    &__top {
+        background-color: #303030;
+    }
+    &__btn {
+        float: right;
+        color: #1b1b1b;
+        font-size: 16px;
+        line-height: 2.25;
+        background-color: #ffc222;
+        padding: 5px 20px 4px 50px;
+        display: block;
+        position: relative;
+        &::before {
+            content: "\f0b1";
+            font-family: 'icomoon';
+            position: absolute;
+            left: 22px;
+            color: #1b1b1b;
+        }
+    }
+    &__phone,
+    &__email {
+        line-height: 1.71;
+        letter-spacing: 0.25;
+        line-height: 3.25;
+        color: #cbcacb;
+    }
+    &__phone {
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        &::before {
+            content: "\f095";
+            font-family: 'icomoon';
+            position: absolute;
+            left: 0;
+            color: #ffc222;
+        }
+    }
+    &__email {
+        padding-left: 24px;
+        position: relative;
+        &::before {
+            content: "\f003";
+            font-family: 'icomoon';
+            position: absolute;
+            left: 0;
+            color: #ffc222;
+        }
+    }
+    &__content {
+        padding: 34px 0 23px;
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .menu  {
+        li {
+        display: inline-block;
+        }
+        li + li {
+            padding-left: 10px;
+        }
+        a {
+            font-size: 16px;
+            line-height: 2.25;
+            color: #323232;
+            border: solid 1px transparent;
+            padding: 0 16px;
+            transition: all .3s;
+            &:hover {
+                border-color: #ffc222;;
+            }
+        }
+        &-gamburger {
+            display: none;
+        }
+    }
+}

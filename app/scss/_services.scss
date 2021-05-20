@@ -1,0 +1,90 @@
+.services {
+    padding: 50px 0 35px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1;
+        color: #212020;
+        &-box {
+            max-width: 525px;
+            width: 100%;
+            padding-left: 138px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 105px;
+                height: 2px;
+                background-color: #ffc222;
+                left: 0;
+                top: 10px;
+            }
+        }
+    }
+    &__text {
+        margin-top: 14px;
+        line-height: 1.29;
+        letter-spacing: 0.14px;
+    }
+    &__btn a {
+        font-family: "Roboto", sans-serif;
+        padding: 6px 37px;
+        border: solid 3px #e6e6e6;
+        line-height: 1.71;
+        letter-spacing: 0.35px;
+        text-align: center;
+        color: #373636;
+    }
+    &__items {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 360px;
+        width: 100%;
+        text-align: center;
+        padding: 30px 0 80px;
+        box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+        background-color: #f9f9f9;
+        position: relative;
+        min-height: 365px;
+        &-title {
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.33;
+            padding: 24px 0 28px;
+            color: #212020;
+        }
+        &-text {
+            line-height: 1.29;
+            letter-spacing: 0.14px;
+            padding: 0px 30px 30px;
+        }
+        &-btn {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            right: 0;
+            .default-btn {
+                color: #373636;
+                &::after {
+                    color: white;
+                }
+            }
+        }
+        &-link {
+            line-height: 1.29;
+            font-family: "Roboto", sans-serif;
+            color: #050505;
+            border-bottom: 1px solid #050505;
+            margin-right: 60px;
+        }
+    }
+}

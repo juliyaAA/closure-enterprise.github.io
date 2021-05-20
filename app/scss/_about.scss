@@ -1,0 +1,29 @@
+.about {
+    background: url("../img/fon-1.jpg") center center/cover no-repeat;
+    min-height: 300px;
+    padding: 37px 0 47px;
+    &__inner {
+        max-width: 537px;
+        width: 100%;
+    }
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1;
+        color: #ffffff;
+    }
+    &__text {
+        margin-top: 34px;
+        line-height: 1.71;
+        letter-spacing: 0.14px;
+        text-align: left;
+        color: #d3d2d2;
+    }
+    &__btn {
+        margin-top: 37px;
+    }
+    &__btn.default-btn:after {
+        color: #000;
+    }
+}

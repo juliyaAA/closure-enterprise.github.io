@@ -1,0 +1,203 @@
+@media screen and (max-width: 1140px) {
+    .services {
+        &__items {
+            display: block;
+        }
+        &__item {
+            max-width: 80%;
+            margin: 30px auto;
+            min-height: 340px;
+        }
+    }
+    .form__inner {
+        background: none;
+    }
+    .news {
+        padding-bottom: 40px;
+        &__inner {
+            display: block;
+        }
+        &__slider {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 90px;
+        }
+        &__blog {
+            max-width: 100%;
+            display: block;
+            margin-bottom: 30px;
+            &:after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+        }
+        &__img {
+            float: left;
+            margin-right: 35px;
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    .slider .slick-prev,
+    .slider .slick-next {
+        display: none !important;
+    }
+    .services {
+        &__top {
+            display: block;
+        }
+        &__title-box {
+            padding-left: 0;
+            text-align: center;
+            margin: 0 auto 30px;
+            &:before {
+                display: none;
+            }
+        }
+        &__btn {
+            text-align: center;
+        }
+    }
+    .form {
+        &__box {
+            &-inner {
+                display: block;
+                .jq-selectbox__select {
+                    margin-bottom: 10px;
+                }
+            }
+            &-left,
+            &-right {
+                max-width: 100%;
+            }
+        }
+        &__btn {
+            float: none;
+        }
+    }
+    .advantages {
+        padding-bottom: 20px;
+        &__inner {
+            display: block;
+        }
+        &__item {
+            max-width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+    .footer {
+        &__inner {
+        display: block;
+        }
+        &__map {
+            max-width: 100%;
+        }
+        &__info {
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media screen and (max-width: 680px) {
+    .header {
+        &__contacts {
+            text-align: center;
+        }
+        &__btn {
+            float: none;
+            display: block;
+            max-width: 335px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__email {
+            padding-right: 20px;
+        }
+        .menu {
+            ul {
+                display: none;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin-top: 20px;
+                z-index: 50;
+            }
+            li {
+                display: block;
+                text-align: center;
+            }
+            li + li {
+                padding-left: 0;
+            }
+            a {
+                display: block;
+                background-color: #ffc222;
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+            }
+            &-gamburger {
+                display: block;
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .services__item {
+        max-width: 100%;
+        min-height: 365px;
+    }
+    .news {
+        &__slider {
+            padding: 50px 15px 25px 25px;
+        }
+        &__inner {
+            .slick-next {
+                right: -14px;
+            }
+            .slick-prev {
+                right: 45px;
+            }
+            .slick-btn {
+                bottom: -110px;
+            }
+        }
+        &__img {
+            float: none;
+        }
+    }
+}
+@media screen and (max-width: 430px) {
+    .slider {
+        .slick-prev,
+        .slick-next {
+            display: none !important;
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+    .advantages__item {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 360px) {
+    .header__email {
+        padding-right: 20px;
+    }
+    .footer__title {
+        line-height: 1;
+    }
+}
+@media screen and (min-width: 680px) {
+    .menu ul {
+        display: block !important;
+    }
+}

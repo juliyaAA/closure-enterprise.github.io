@@ -1,0 +1,94 @@
+.slider {
+    background: url("../img/slider-1.jpg") center center/cover no-repeat;
+    min-height: 497px;
+    &__inner {
+        position: relative;
+        &-content {
+            text-align: center;
+            padding-top: 110px;
+            max-width: 665px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 1.5px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 1.33;
+        color: #d3d2d2;
+    }
+}
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 78%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: solid 1px #ffffff;
+    background-color: #ffc222;
+    z-index: 3;
+    cursor: pointer;
+    outline: none;
+}
+.slick-next {
+    right: 0;
+    &:after {
+        font-family: "icomoon";
+        content: "\f105";
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+}
+.slick-prev {
+    left: 0;
+    &:after {
+        font-family: "icomoon";
+        content: "\f104";
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+}
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+    cursor: default;
+    background-color: transparent;
+}
+.default-btn {
+    margin-top: 47px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    color: #ffffff;
+    padding: 7px 24px 8px 20px;
+    display: inline-block;
+    background-color: transparent;
+    border: solid 1px #ffc222;
+    border-right-width: 20px;
+    position: relative;
+    outline: none;
+    &:after {
+        font-family: "icomoon";
+        content: "\f105";
+        position: absolute;
+        right: -12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
